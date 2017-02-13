@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>
+            Enter Email to receive invite
+        </title>
+    </head>
+    <body>
+        <center>
+            <form action="/sendinvite/" method="POST">
+                {% csrf_token %}
+                <input type="text" name="email">
+                <br/>
+                <button type="submit">Get an invite!</button>
+            </form>
+        </center>
+    </body>
+</html>
