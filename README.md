@@ -20,6 +20,7 @@ This web app is designed to be run on heroku. This can be easily set up to run o
 12. Click on "Reveal Config Vars" next to the "Config Variables" section.
 13. Add the following 5 `"key": "value"` pairs:
     * `"C9_USER_NAME": "yourc9username"` # This is the c9 user name of an admin on the team.
+      * I recommend inviting a new dummy user and making it admin for your team and using that account. That way even if this user's credentials is stolen by heroku, your main account's private workspaces etc. will not be compromised.
     * `"C9_PASSPHRASE": "yourc9password"` # If it contains \\, please write \\\\ instead.
     * `"C9_TEAM_NAME": "yourteamname"` # In team admin console, this is what is in the URL.
       * ex. https://c9.io/team/yourteamname/manage would be `yourteamname`
