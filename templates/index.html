@@ -8,9 +8,10 @@
         <center>
             <form action="/sendinvite/" method="POST">
                 {% csrf_token %}
-                <input type="text" name="email">
+                <input type="text" name="email" style="width:95%;height:40px;font-size:26px;">
                 <br/>
-                <button type="submit">Get an invite!</button>
+                <br/>
+                <button type="submit" style="width:50%;height:30px;font-size:20px;">Get an invite!</button>
             </form>
         </center>
     </body>
